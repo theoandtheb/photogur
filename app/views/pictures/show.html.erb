@@ -1,4 +1,5 @@
 <%= link_to "Back to Pictures", pictures_url %> |
-<%= link_to "Edit This Picture", edit_picture_path(@picture) %>
+<%= link_to "Edit This Picture", edit_picture_path(@picture) %> |
+<%= link_to "Delete This Picture", @picture, :confirm => "Are you sure you want to permanently delete this picture?", :method => :delete %>
 <p><%= @picture[:title] %>, <%= @picture[:artist] %></p>
 <%= image_tag @picture.url %>
