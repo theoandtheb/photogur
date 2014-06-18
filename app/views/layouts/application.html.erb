@@ -4,11 +4,21 @@
   <title>Photogur</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" type="text/css" href="/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/responsive.css">
+  <link rel="stylesheet" type="text/css" href="/fine.css">
+  <link href='http://fonts.googleapis.com/css?family=Corben|Lemon' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
+
+<div class="bkgrnd">
+
 <body>
 
 <%= yield %>
 
 </body>
+
+
+</div>
 </html>
