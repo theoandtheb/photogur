@@ -8,4 +8,12 @@ class Picture < ActiveRecord::Base
       t.timestamps
     end
   end
+
+  scope :newest_first, -> { order("created_at DESC") }
+  scope :most_recent_three, -> { newest_first.limit(3) }
+
+def self.created_before(time)
+  where("created_at < ?", time)
+end
+
 end

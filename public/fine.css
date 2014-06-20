@@ -20,27 +20,6 @@ img {
     box-shadow:         5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-/*.picCell {
-  display: inline-table;
-  width: 45%;
-  vertical-align: center;
-    margin-left: 2%;
-    margin-right: 2%;
-}*/
-
-
-/*.bkgrnd{
-height:100%;
-width:auto;
-background-attachment: fixed;
-background-size:cover;
-background-position:center; /* IE fix */
-}
-*/
-h1 {
-  margin-top: 0;
-}
-
 footer {
   position:fixed;
   bottom:0;
@@ -59,10 +38,11 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin: auto 0;
+  margin-top: 0;
 }
 
 .indexH1 {
-  font-size: 4.7em;
+  font-size: 3.7em;
 }
 
 .newH1 {
