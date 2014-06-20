@@ -4,5 +4,12 @@
 <div class="picCell">
 <p><%= picture[:title] %>, <%= picture[:artist] %></p>
 <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
-</div>
 <% end %>
+</div>
+<p>Photos created within the past day: <%= Picture.created_before(1.day.ago).count %></p>
+<% @pic_recent.each do |picture| %>
+<div class="picCell">
+<p><%= picture[:title] %>, <%= picture[:artist] %></p>
+<%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+<% end %>
+</div>

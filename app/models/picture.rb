@@ -13,7 +13,7 @@ class Picture < ActiveRecord::Base
   scope :most_recent_three, -> { newest_first.limit(3) }
 
 def self.created_before(time)
-  where("created_at < ?", time)
+  where("created_at > ?", time)
 end
 
 end
